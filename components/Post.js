@@ -5,7 +5,7 @@ function Post ({name, message, image, timestamp, postImage})  {
         <div className="flex-flex-col">
             <div className="p-5 bg-white mt-5 rounded-t-2xl shadow-xl">
                 <div className="flex items-center space-x-2">
-                    <img className="rounded-full"
+                    <Image className="rounded-full"
                     src={image}
                     width={40}
                     height={40}
@@ -21,7 +21,7 @@ function Post ({name, message, image, timestamp, postImage})  {
                     </div>
 
                     {postImage && (
-                        <div className="realtive h-56 md:h-96 bg-white">
+                        <div className="relative h-56 md:h-96">
                             <Image src={postImage} objectFit="cover" layout="fill" width={200} height={200} />
                             </div>
                     )}
